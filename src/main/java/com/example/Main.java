@@ -59,7 +59,7 @@ public class Main {
   String fibo() {
      ArrayList<int> sequencia = new ArrayList<int>();
      for (int i = 0; i < 30; i++) {
-       sequencia.add(fibo(i));
+       sequencia.add(f.fibo(i));
      }
      model.put("sequencia", sequencia);
     return "fibo";
