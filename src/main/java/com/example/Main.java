@@ -44,6 +44,8 @@ public class Main {
   @Autowired
   private DataSource dataSource;
 
+  private Fibonacci f = new Fibonacci();
+
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);
   }
@@ -51,6 +53,16 @@ public class Main {
   @RequestMapping("/")
   String index() {
     return "index";
+  }
+
+  @RequestMapping("/fibo")
+  String fibo() {
+     ArrayList<int> sequencia = new ArrayList<int>();
+     for (int i = 0; i < 30; i++) {
+       sequencia.add(fibo(i));
+     }
+     model.put("sequencia", sequencia);
+    return "fibo";
   }
 
   @RequestMapping("/db")
