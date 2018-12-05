@@ -7,6 +7,6 @@ public class TesteFibo {
     @Test
     public void Teste1() {
         Fibonacci f = new Fibonacci();
-        assertEquals(f.fibo(1),1L);
+        assertEquals(f.fibo(1),1L, "O Fibonacci 1 deve ser 1");
     }
 }
