@@ -57,7 +57,7 @@ public class Main {
 
   @RequestMapping("/fibo")
   String fibo() {
-     ArrayList<Integer> sequencia = new ArrayList<Integer>();
+     ArrayList<Long> sequencia = new ArrayList<Long>();
      for (int i = 0; i < 30; i++) {
        sequencia.add(f.fibo(i));
      }
