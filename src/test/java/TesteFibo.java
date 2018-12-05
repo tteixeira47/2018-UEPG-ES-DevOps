@@ -1,4 +1,5 @@
 import org.junit.Test;
+import static org.junit.Assert.*;
 import com.example.Fibonacci;
 
 public class TesteFibo {
