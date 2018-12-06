@@ -55,7 +55,7 @@ public class Main {
   }
 
   @RequestMapping("/fibo1")
-  String fibo(Map<String, Object> model) {
+  String fibo1(Map<String, Object> model) {
      ArrayList<Double> sequencia = new ArrayList<Double>();
      for (int i = 0; i < 10; i++) {
        sequencia.add(f.fibo(i));
