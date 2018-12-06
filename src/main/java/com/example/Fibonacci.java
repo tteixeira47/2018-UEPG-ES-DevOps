@@ -6,10 +6,10 @@ public class Fibonacci{
 
     }
     public static long fibo(int n) {
-        if (n < 2) {
-            return n;
+        if (n >= 0) {
+            return Math.pow(2,n);
         } else {
-            return fibo(n - 1) + fibo(n - 2);
+            return -1;
         }
     }
 }
