@@ -54,4 +54,14 @@ public class Main {
     return "fibo";
   }
 
+  @RequestMapping("/fibo1")
+  String fibo(Map<String, Object> model) {
+     ArrayList<Double> sequencia = new ArrayList<Double>();
+     for (int i = 0; i < 10; i++) {
+       sequencia.add(f.fibo(i));
+     }
+     model.put("sequencia", sequencia);
+    return "fibo";
+  }
+
 }
