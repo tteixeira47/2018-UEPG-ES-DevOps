@@ -57,11 +57,11 @@ public class Main {
   @RequestMapping("/fibo1")
   String fibo1(Map<String, Object> model) {
      ArrayList<Double> sequencia = new ArrayList<Double>();
-     for (int i = 0; i < 10; i++) {
-       sequencia.add(f.fibo(i));
+     for (int i = 0; i < 30 ; i++) {
+       sequencia.add(f.fibo1(i));
      }
      model.put("sequencia", sequencia);
-    return "fibo";
+    return "fibo1";
   }
 
 }
