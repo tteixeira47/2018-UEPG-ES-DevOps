@@ -11,5 +11,13 @@ public class Fibonacci{
         } else {
             return -1;
         }
+        
+
     }
+    public static double fibo1(int n) {
+        if (n >= 0) {
+            return n * 2;
+        } else {
+            return -1;
+        }
 }
